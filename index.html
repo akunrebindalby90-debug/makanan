@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pesanan Makanan Online</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>🍽️ Warung Indonesia</h1>
+  <p>Menu lezat harga bersahabat!</p>
+  <div class="sponsors">
+    <span>Sponsored by: Haus!, Seniman Kari & Bebek Sinjay</span>
+  </div>
+</header>
+
+<section class="search-box">
+  <input type="text" id="searchInput" placeholder="Cari makanan..." onkeyup="searchMenu()">
+</section>
+
+<section id="menuList" class="menu-list">
+
+  <!-- Bakso -->
+  <div class="menu-item" data-name="bakso">
+    <img src="assets/images/bakso.jpg" alt="Bakso">
+    <h3>Bakso</h3>
+    <button onclick="orderNow('Bakso')">Order via WhatsApp</button>
+  </div>
+
+  <!-- Pecel -->
+  <div class="menu-item" data-name="pecel">
+    <img src="assets/images/pecel.jpg" alt="Pecel">
+    <h3>Pecel</h3>
+    <button onclick="orderNow('Pecel')">Order via WhatsApp</button>
+  </div>
+
+  <!-- Nasi Kuning -->
+  <div class="menu-item" data-name="nasi kuning">
+    <img src="assets/images/nasi-kuning.jpg" alt="Nasi Kuning">
+    <h3>Nasi Kuning</h3>
+    <button onclick="orderNow('Nasi Kuning')">Order via WhatsApp</button>
+  </div>
+
+  <!-- Dan lainnya... sama formatnya -->
+
+</section>
+
+<section class="no-results" id="noResults">
+  <p>Maaf, Kami belum menambahkan makanan "<span id="searchText"></span>"</p>
+</section>
+
+<footer>
+  <h2>Pembayaran</h2>
+  <img src="assets/images/qr-payment.png" alt="QR Payment">
+  <p>Scan untuk bayar</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
